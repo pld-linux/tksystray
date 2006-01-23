@@ -8,20 +8,19 @@ Group:		Development/Languages/Tcl
 Source0:	http://sgolovan.nes.ru/debian/pool/main/tksystray/%{name}_%{version}.orig.tar.gz
 # Source0-md5:	d1784d2f786304bd6eaa82512fd5cf1c
 URL:		http://tkabber.jabber.ru/tksystray
+BuildRequires:	imlib2-devel
 BuildRequires:	tcl-devel
 BuildRequires:	tk-devel
-BuildRequires:	imlib2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Freedesktop systray for Tk
+Freedesktop systray for Tk.
 
 %description -l pl
-Obs³uga doku systemowego Freedesktop dla Tk
-
+Obs³uga doku systemowego Freedesktop dla Tk.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %build
 %configure
@@ -31,8 +30,8 @@ Obs³uga doku systemowego Freedesktop dla Tk
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_libdir}/%{name}
 
-install -m 0644 pkgIndex.tcl $RPM_BUILD_ROOT%{_libdir}/%{name}/
-install -m 0755 libtray.so $RPM_BUILD_ROOT%{_libdir}/%{name}/
+install pkgIndex.tcl $RPM_BUILD_ROOT%{_libdir}/%{name}
+install libtray.so $RPM_BUILD_ROOT%{_libdir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
