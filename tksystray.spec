@@ -1,5 +1,5 @@
 Summary:	Tk systray extension
-Summary(pl):	Rozszerzenie Tk o obs³ugê doku systemowego
+Summary(pl.UTF-8):   Rozszerzenie Tk o obsÅ‚ugÄ™ doku systemowego
 Name:		tksystray
 Version:	0.1
 Release:	0.1
@@ -16,8 +16,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Freedesktop systray for Tk.
 
-%description -l pl
-Obs³uga doku systemowego Freedesktop dla Tk.
+%description -l pl.UTF-8
+ObsÅ‚uga doku systemowego Freedesktop dla Tk.
 
 %prep
 %setup -q
