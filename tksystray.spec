@@ -1,5 +1,5 @@
 Summary:	Tk systray extension
-Summary(pl.UTF-8):   Rozszerzenie Tk o obsługę doku systemowego
+Summary(pl.UTF-8):	Rozszerzenie Tk o obsługę doku systemowego
 Name:		tksystray
 Version:	0.1
 Release:	0.1
