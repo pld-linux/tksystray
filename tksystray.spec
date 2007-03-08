@@ -9,8 +9,10 @@ Source0:	http://sgolovan.nes.ru/debian/pool/main/tksystray/%{name}_%{version}.or
 # Source0-md5:	d1784d2f786304bd6eaa82512fd5cf1c
 URL:		http://tkabber.jabber.ru/tksystray
 BuildRequires:	imlib2-devel
+BuildRequires:	imlib-devel
 BuildRequires:	tcl-devel
 BuildRequires:	tk-devel
+BuildRequires:	xorg-lib-libXScrnSaver-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
